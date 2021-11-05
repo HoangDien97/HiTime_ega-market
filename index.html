@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="font/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>EGA MARKET_HiTime</title>
 </head>
 
@@ -24,7 +25,7 @@
         <div id="banner_top">
             <div class="container">
                 <div class="row">
-                    <div class="col md-12">
+                    <div class="col md-12 d-md-block d-none">
                         <div class="top-banner">
                             <a href="/collections/all" title="Banner top">
                                 <img class="img-fluid" src="images/top_banner_ega_market.png" alt="">
@@ -41,7 +42,7 @@
 
         <!-- end banner_top------------------ -->
 
-        <div id="header">
+        <!-- <div id="header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2">
@@ -72,7 +73,65 @@
                                 </div>
                             </li>
                             <li id="media_2" class="media ">
-                                <!-- <img src="images/account.webp" alt=""> -->
+                                <i class="fas fa-user-circle align-self-center"></i>
+                                <div class="media-body d-md-flex flex-column d-none">
+
+                                    <a href="" class=" d-block text-decoration-none text-white">Đăng nhập</a>
+                                    <a href="" class=" d-block text-decoration-none text-white">Đăng ký</a>
+                                </div>
+                            </li>
+                            <li class="cartgroup">
+                                <div class="mini-cart text-center">
+                                    <a href="" class="img-hover-cart">
+                                        <i id="icon-cart" class="fas fa-shopping-bag"></i>
+                                        <span class="mx-2 d-md-block d-none">Giỏ hàng</span>
+                                        <span class="count-item">0</span>
+                                    </a>
+
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div id="logo">
+                            <a href="">
+                                <img src="images/logo_ega_market.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <form action="" id="search">
+                            <input type="text" name="q" placeholder="Tìm kiếm sản phẩm...">
+                            <button><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-6">
+
+
+
+                        <ul class="support d-md-flex align-items-center d-none">
+                            <li id="media_1" class="media">
+                                <img src="images/phone-call.png" alt="">
+                                <div class="media-body d-md-flex flex-column d-none">
+                                    <span class="title-hotline">Hỗ trợ khách hàng</span>
+                                    <a href="tel:19006750" class="font-weight-bold d-block text-decoration-none text-white">19006750</a>
+                                </div>
+                            </li>
+                            <li id="media_2" class="media ">
+
                                 <i class="fas fa-user-circle align-self-center"></i>
                                 <div class="media-body d-md-flex flex-column d-none">
 
@@ -98,10 +157,159 @@
                 </div>
             </div>
         </div>
-
         <!-- end header---------------------- -->
 
-        <div id="header-end">
+        <div id="rps-menu" class="d-md-none">
+            <label for="check"><i class="fas fa-bars text-dark"></i></label>
+            <input id="check" type="checkbox">
+            <div class="test">
+                <!-- <ul id="respon-menu">
+                    <li><a href="">TRANG CHỦ</a></li>
+                    <li><a href="">GIỚI THIỆU</a></li>
+                    <li><a href="">SẢN PHẨM</a></li>
+                    <li><a href="">KHUYẾN MÃI HOT</a></li>
+                    <li><a href="">TIN TỨC</a></li>
+                    <li><a href="">LIÊN HỆ</a></li>
+
+                </ul> -->
+                <div class="list-header-end align-items-center">
+                    <div class=" top-category">
+
+                        <div class="category-hid">
+
+                            <ul class="list-cate list-unstyled pt-1">
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_1.png" alt="">
+                                        </div>
+                                        <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_2.png" alt="">
+                                        </div>
+                                        <p class="text-center">Làm đẹp - Sức khỏe</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_3.png" alt="">
+                                        </div>
+                                        <p class="text-center">Đồ chơi, Mẹ và bé</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_4.png" alt="">
+                                        </div>
+                                        <p class="text-center">Hàng tiêu dùng</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_5.png" alt="">
+                                        </div>
+                                        <p class="text-center">Điện tử - Điện lạnh</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_6.png" alt="">
+                                        </div>
+                                        <p class="text-center">Thời trang, phụ kiện</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_7.png" alt="">
+                                        </div>
+                                        <p class="text-center">Điện gia dụng</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_8.png" alt="">
+                                        </div>
+                                        <p class="text-center">Thể thao, dã ngoại</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_9.png" alt="">
+                                        </div>
+                                        <p class="text-center">Nhà cửa đời sống</p>
+                                    </a>
+                                </li>
+                                <li class="item-cate">
+                                    <a class="cate-link" href="#">
+                                        <div class="img-cate">
+                                            <img src="images/menu_icon_10.png" alt="">
+                                        </div>
+                                        <p class="text-center">Sales page</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="device d-md-block d-none">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 item-header-end ">
+                                <div class="icon-header-end">
+                                    <img src="images/policy_header_image_1_menu.png" alt="">
+                                </div>
+                                <p style="padding-top: 8px;">Sản phẩm chính hãng</p>
+                            </div>
+                            <div class="col-md-4 item-header-end ">
+                                <div class="icon-header-end">
+                                    <img src="images/policy_header_image_2_menu.png" alt="">
+                                </div>
+                                <p style="padding-top: 8px;">Kiểm tra khi nhận hàng</p>
+                            </div>
+                            <div class="col-md-4 item-header-end ">
+                                <div class="icon-header-end">
+                                    <img src="images/policy_header_image_3_menu.png" alt="">
+                                </div>
+                                <p style="padding-top: 8px;">Hoàn tiền 111% nếu giả</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account-submenu">
+                    <a href="" class="login text-decoration-none">Đăng nhập</a>
+                    <a href="" class="register text-decoration-none ml-3">Đăng ký</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end rps menu--------------  -->
+
+        <div id="banner-rps" class="d-md-none mt-5">
+            <div class="content-banner">
+                <div class="row">
+                    <div class=" banner">
+                        <a href="">
+                            <img src="images/slider_1_menu.png" alt="" width="414px" height="200px">
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="header-end" class="d-md-block d-none">
             <div class="container-fluid ">
                 <div class="container">
                     <div class="list-header-end align-items-center">
@@ -117,7 +325,7 @@
                                     <div class="icon-header-end">
                                         <img src="images/policy_header_image_1_menu.png" alt="">
                                     </div>
-                                    <p>Sản phẩm chính hãng</p>
+                                    <p style="padding-top: 8px;">Sản phẩm chính hãng</p>
                                 </div>
                                 <div class="col-md-4 item-header-end ">
                                     <div class="icon-header-end">
@@ -138,7 +346,7 @@
                 </div>
             </div>
         </div>
-        <div id="content">
+        <div id="content" class="d-md-block d-none">
             <div class="container">
                 <div class="content-main">
                     <div class="category shadow-sm ">
@@ -154,47 +362,79 @@
                             <li class="item-cate">
                                 <a class="cate-link" href="#">
                                     <div class="img-cate">
-                                        <img src="images/menu_icon_1.png" alt="">
+                                        <img src="images/menu_icon_2.png" alt="">
                                     </div>
-                                    <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    <p class="text-center">Làm đẹp - Sức khỏe</p>
                                 </a>
                             </li>
                             <li class="item-cate">
                                 <a class="cate-link" href="#">
                                     <div class="img-cate">
-                                        <img src="images/menu_icon_1.png" alt="">
+                                        <img src="images/menu_icon_3.png" alt="">
                                     </div>
-                                    <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    <p class="text-center">Đồ chơi, Mẹ và bé</p>
                                 </a>
                             </li>
                             <li class="item-cate">
                                 <a class="cate-link" href="#">
                                     <div class="img-cate">
-                                        <img src="images/menu_icon_1.png" alt="">
+                                        <img src="images/menu_icon_4.png" alt="">
                                     </div>
-                                    <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    <p class="text-center">Hàng tiêu dùng</p>
                                 </a>
                             </li>
                             <li class="item-cate">
                                 <a class="cate-link" href="#">
                                     <div class="img-cate">
-                                        <img src="images/menu_icon_1.png" alt="">
+                                        <img src="images/menu_icon_5.png" alt="">
                                     </div>
-                                    <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    <p class="text-center">Điện tử - Điện lạnh</p>
                                 </a>
                             </li>
                             <li class="item-cate">
                                 <a class="cate-link" href="#">
                                     <div class="img-cate">
-                                        <img src="images/menu_icon_1.png" alt="">
+                                        <img src="images/menu_icon_6.png" alt="">
                                     </div>
-                                    <p class="text-center">Điện thoại, máy tính bảng</p>
+                                    <p class="text-center">Thời trang, phụ kiện</p>
+                                </a>
+                            </li>
+                            <li class="item-cate">
+                                <a class="cate-link" href="#">
+                                    <div class="img-cate">
+                                        <img src="images/menu_icon_7.png" alt="">
+                                    </div>
+                                    <p class="text-center">Điện gia dụng</p>
+                                </a>
+                            </li>
+                            <li class="item-cate">
+                                <a class="cate-link" href="#">
+                                    <div class="img-cate">
+                                        <img src="images/menu_icon_8.png" alt="">
+                                    </div>
+                                    <p class="text-center">Thể thao, dã ngoại</p>
+                                </a>
+                            </li>
+                            <li class="item-cate">
+                                <a class="cate-link" href="#">
+                                    <div class="img-cate">
+                                        <img src="images/menu_icon_9.png" alt="">
+                                    </div>
+                                    <p class="text-center">Nhà cửa đời sống</p>
+                                </a>
+                            </li>
+                            <li class="item-cate">
+                                <a class="cate-link" href="#">
+                                    <div class="img-cate">
+                                        <img src="images/menu_icon_10.png" alt="">
+                                    </div>
+                                    <p class="text-center">Sales page</p>
                                 </a>
                             </li>
 
                         </ul>
                     </div>
-                    <div class="content-banner ">
+                    <div class="content-banner">
                         <div class="row">
                             <div class=" banner">
                                 <a href="">
@@ -205,68 +445,18 @@
 
 
                     </div>
-                    <!-- //////////////////////////////// -->
+
 
                 </div>
-                <!-- <div class="col-12 bot-banner-mobile">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-4 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/service_mb_1.png?v=3743" alt=""></div>
-                                <p style="font-style: italic;" class="text-center">GIAO HÀNG 2H</p>
-                            </div>
-                            <div class="col-4 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/service_mb_2.png?v=3743" alt=""></div>
-                                <p style="font-style: italic;" class="text-center">ĐỔI TRẢ MIỄN PHÍ TẠI NHÀ</p>
-                            </div>
-                            <div class="col-4 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/service_mb_3.png?v=3743" alt=""></div>
-                                <p style="font-style: italic;" class="text-center">NHẬN ĐƠN TỪ 150K</p>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 10px;">
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb10.png?v=3743" alt=""></div>
-                                <p class="text-center">Danh mục</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb2.png?v=3743" alt=""></div>
-                                <p class="text-center">Sushi & Sashimi</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb3.png?v=3743" alt=""></div>
-                                <p class="text-center">Ready to eat</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb4.png?v=3743" alt=""></div>
-                                <p class="text-center">Hải sản HOT</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb6.png?v=3743" alt=""></div>
-                                <p class="text-center">Ngao, sò, ốc</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb6.png?v=3743" alt=""></div>
-                                <p class="text-center">Tôm các loại</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="https://file.hstatic.net/1000030244/file/35x35_4cb9c8d9bc314b3e9df5ca7b0b341b26.png" alt=""></div>
-                                <p class="text-center">Gia vị, Sốt</p>
-                            </div>
-                            <div class="col-3 d-block item">
-                                <div class="text-center"><img src="//theme.hstatic.net/1000030244/1000730923/14/icon_menu_mb8.png?v=3743" alt=""></div>
-                                <p class="text-center">Cá hồi tươi</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
             </div>
         </div>
+        <!-- end menu------------------- -->
 
 
 
 
-        <div id="brand">
+        <div id="brand" class="d-md-block d-none">
             <div class="container">
                 <div class="row">
                     <div class="item col-md-3">
@@ -329,15 +519,15 @@
 
 
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="item_product_main">
                                 <form action="">
                                     <div class="product-thumbnail pos-relative">
-                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                             <img class="show_frame product-frame lazyload loaded" src="images/frame_2_ega_marker.png" alt="">
                                             <img class="lazyload loaded show_img" src="images/laptop_1.png" alt=" ">
                                         </a>
-                                        <div class="product-action">
+                                        <div class="product-action d-md-block d-none">
                                             <div class="group_action_1">
                                                 <input class="hidden" type="hidden">
                                                 <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -351,7 +541,7 @@
                                     </div>
                                     <div class="product-info ml-md-4">
                                         <h3 class="product-name text-md-left">
-                                            <a href="">Laptop ASUS ZenBook</a>
+                                            <a href="product-detail.html">Laptop ASUS ZenBook</a>
                                         </h3>
                                         <div class="price-box text-md-left">
                                             <span>24.990.000₫</span>
@@ -364,15 +554,15 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="item_product_main">
                                 <form action="">
                                     <div class="product-thumbnail pos-relative">
-                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                             <img class="show_frame product-frame lazyload loaded" src="images/frame_2_ega_marker.png" alt="">
                                             <img class="lazyload loaded show_img" src="images/laptop_2.png" alt=" ">
                                         </a>
-                                        <div class="product-action">
+                                        <div class="product-action d-md-block d-none">
                                             <div class="group_action_1">
                                                 <input class="hidden" type="hidden">
                                                 <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -386,7 +576,7 @@
                                     </div>
                                     <div class="product-info ml-md-4">
                                         <h3 class="product-name text-md-left">
-                                            <a href="">Laptop ASUS VivoBook S14</a>
+                                            <a href="product-detail.html">Laptop ASUS VivoBook S14</a>
                                         </h3>
                                         <div class="price-box text-md-left">
                                             <span>12.790.000₫</span>
@@ -399,15 +589,15 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="item_product_main">
                                 <form action="">
                                     <div class="product-thumbnail pos-relative">
-                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                             <img class="show_frame product-frame lazyload loaded" src="images/frame_2_ega_marker.png" alt="">
                                             <img class="lazyload loaded show_img" src="images/smartphone_glx-a31.png" alt=" ">
                                         </a>
-                                        <div class="product-action">
+                                        <div class="product-action d-md-block d-none">
                                             <div class="group_action_1">
                                                 <input class="hidden" type="hidden">
                                                 <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -421,7 +611,7 @@
                                     </div>
                                     <div class="product-info ml-md-4">
                                         <h3 class="product-name text-md-left">
-                                            <a href="">Samsung Galaxy A31</a>
+                                            <a href="product-detail.html">Samsung Galaxy A31</a>
                                         </h3>
                                         <div class="price-box text-md-left">
                                             <span>2.995.000₫</span>
@@ -434,21 +624,21 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="item_product_main">
                                 <form action="">
                                     <div class="product-thumbnail pos-relative">
-                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                        <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                             <img class="show_frame product-frame lazyload loaded" src="images/frame_2_ega_marker.png" alt="">
                                             <img class="lazyload loaded show_img" src="images/ss-glx-note-10-plus-1.png" alt=" ">
                                         </a>
-                                        <div class="product-action">
+                                        <div class="product-action d-md-block d-none">
                                             <div class="group_action_1">
                                                 <input class="hidden" type="hidden">
                                                 <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
                                                         <div class="fas fa-search"></div>
                                                     </button>
-                                                <a href="" class="xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
+                                                <a href="product-detail.html" class="xem_nhanh btn-circle btn-views btn_view btn right-to quick-view">
                                                     <i class="far fa-eye"></i>
                                                 </a>
                                             </div>
@@ -486,7 +676,7 @@
 
         </div>
 
-        <div id="banner_adv">
+        <div id="banner_adv" class="d-md-block d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -514,19 +704,15 @@
                 <div class="row mt-3">
 
 
-
-
-
-
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="item_product_main">
                             <form action="">
                                 <div class="product-thumbnail pos-relative">
-                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                         <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                        <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                        <img class="lazyload loaded show_img" src="images/laptop_2.png" alt=" ">
                                     </a>
-                                    <div class="product-action">
+                                    <div class="product-action d-md-block d-none">
                                         <div class="group_action">
                                             <input class="hidden" type="hidden">
                                             <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -540,7 +726,7 @@
                                 </div>
                                 <div class="product-info ml-md-0">
                                     <h3 class="product-name text-md-left">
-                                        <a href="">Laptop ASUS ZenBook</a>
+                                        <a href="product-detail.html">Laptop ASUS ZenBook</a>
                                     </h3>
                                     <div class="price-box text-md-left">
                                         <span>24.990.000₫</span>
@@ -549,15 +735,15 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="item_product_main">
                             <form action="">
                                 <div class="product-thumbnail pos-relative">
-                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                         <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                        <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                        <img class="lazyload loaded show_img" src="images/laptop_2.png" alt=" ">
                                     </a>
-                                    <div class="product-action">
+                                    <div class="product-action d-md-block d-none">
                                         <div class="group_action">
                                             <input class="hidden" type="hidden">
                                             <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -571,7 +757,7 @@
                                 </div>
                                 <div class="product-info ml-md-0">
                                     <h3 class="product-name text-md-left">
-                                        <a href="">Laptop ASUS ZenBook</a>
+                                        <a href="product-detail.html">Laptop ASUS ZenBook</a>
                                     </h3>
                                     <div class="price-box text-md-left">
                                         <span>24.990.000₫</span>
@@ -580,15 +766,15 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="item_product_main">
                             <form action="">
                                 <div class="product-thumbnail pos-relative">
-                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
+                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="product-detail.html">
                                         <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                        <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                        <img class="lazyload loaded show_img" src="images/laptop_2.png" alt=" ">
                                     </a>
-                                    <div class="product-action">
+                                    <div class="product-action d-md-block d-none">
                                         <div class="group_action">
                                             <input class="hidden" type="hidden">
                                             <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -602,7 +788,7 @@
                                 </div>
                                 <div class="product-info ml-md-0">
                                     <h3 class="product-name text-md-left">
-                                        <a href="">Laptop ASUS ZenBook</a>
+                                        <a href="product-detail.html">Laptop ASUS ZenBook</a>
                                     </h3>
                                     <div class="price-box text-md-left">
                                         <span>24.990.000₫</span>
@@ -611,15 +797,15 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-6">
                         <div class="item_product_main">
                             <form action="">
                                 <div class="product-thumbnail pos-relative">
                                     <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                         <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                        <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                        <img class="lazyload loaded show_img" src="images/laptop_2.png" alt=" ">
                                     </a>
-                                    <div class="product-action">
+                                    <div class="product-action d-md-block d-none">
                                         <div class="group_action">
                                             <input class="hidden" type="hidden">
                                             <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -633,7 +819,7 @@
                                 </div>
                                 <div class="product-info ml-md-0">
                                     <h3 class="product-name text-md-left">
-                                        <a href="">Laptop ASUS ZenBook</a>
+                                        <a href="product-detail.html">Laptop ASUS ZenBook</a>
                                     </h3>
                                     <div class="price-box text-md-left">
                                         <span>24.990.000₫</span>
@@ -663,15 +849,7 @@
 
 
 
-        <!-- <div id="banner_adv " class="mr_b_30">
-            <div class="container section px-md-0 mt-lg-0 mt-3 ">
-                <div class="slider_1 ">
-                    <a href="">
-                        <img src="images/slider_1.png " alt=" ">
-                    </a>
-                </div>
-            </div>
-        </div> -->
+
 
         <div id="phone-featured" class="mr_b_30">
             <div class="container py-2 card border-0 ">
@@ -681,8 +859,8 @@
                     </h2>
 
                 </div>
-                <div class="row mt-4 ">
-                    <div class="col-md-4 text-center pb-2">
+                <div class="row mt-4">
+                    <div class="col-md-4 col-12 text-center pb-2">
                         <div class="row">
                             <a class="phone-featured_img" href=" ">
                                 <img src="images/banner_smartphone_hot.png" alt=" ">
@@ -692,20 +870,20 @@
 
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                                <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                                <img class="lazyload loaded show_img" src="images/ss-glx-note-10-plus-1.png" alt=" ">
                                             </a>
                                             <div class="label_product">
                                                 <div class="label_wrapper">
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -719,29 +897,29 @@
                                         </div>
                                         <div class="product-info ml-md-0">
                                             <h3 class="product-name text-md-left">
-                                                <a href="">Laptop ASUS ZenBook</a>
+                                                <a href="">Samsung Galaxy Note 10 Plus</a>
                                             </h3>
                                             <div class="price-box text-md-left">
-                                                <span>24.990.000₫</span>
+                                                <span>15.990.000₫</span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                                <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                                <img class="lazyload loaded show_img" src="images/ss-glx-note-10-plus-1.png" alt=" ">
                                             </a>
                                             <div class="label_product">
                                                 <div class="label_wrapper">
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -755,29 +933,29 @@
                                         </div>
                                         <div class="product-info ml-md-0">
                                             <h3 class="product-name text-md-left">
-                                                <a href="">Laptop ASUS ZenBook</a>
+                                                <a href="">Samsung Galaxy Note 10 Plus</a>
                                             </h3>
                                             <div class="price-box text-md-left">
-                                                <span>24.990.000₫</span>
+                                                <span>15.990.000₫</span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="show_frame product-frame lazyload loaded" src="images/frame_3.png" alt="">
-                                                <img class="lazyload loaded show_img" src="images/glx-a31-trang.png" alt=" ">
+                                                <img class="lazyload loaded show_img" src="images/ss-glx-note-10-plus-1.png" alt=" ">
                                             </a>
                                             <div class="label_product">
                                                 <div class="label_wrapper">
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -791,15 +969,16 @@
                                         </div>
                                         <div class="product-info ml-md-0">
                                             <h3 class="product-name text-md-left">
-                                                <a href="">Laptop ASUS ZenBook</a>
+                                                <a href="">Samsung Galaxy Note 10 Plus</a>
                                             </h3>
                                             <div class="price-box text-md-left">
-                                                <span>24.990.000₫</span>
+                                                <span>15.990.000₫</span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
+
 
 
                         </div>
@@ -827,7 +1006,7 @@
 
                 </div>
                 <div class="row mt-4 ">
-                    <div class="col-md-4 text-center pb-2">
+                    <div class="col-md-4 col-12 text-center pb-2">
                         <div class="row">
                             <a class="phone-featured_img" href=" ">
                                 <img src="images/section_hot_laptop.png" alt=" ">
@@ -837,7 +1016,7 @@
 
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
@@ -850,7 +1029,7 @@
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -873,7 +1052,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
@@ -886,7 +1065,7 @@
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -909,7 +1088,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
@@ -922,7 +1101,7 @@
                                                     - 7%
                                                 </div>
                                             </div>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -1015,14 +1194,14 @@
 
 
 
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="lazyload loaded" src="images/laptop_2.png" alt=" ">
                                             </a>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -1051,14 +1230,14 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="lazyload loaded" src="images/laptop_2.png" alt=" ">
                                             </a>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -1087,14 +1266,14 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="lazyload loaded" src="images/laptop_2.png" alt=" ">
                                             </a>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -1123,14 +1302,14 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-3 col-6">
                                 <div class="item_product_main">
                                     <form action="">
                                         <div class="product-thumbnail pos-relative">
                                             <a class="image_thumb pos-relative embed-responsive embed-responsive-1by1" href="">
                                                 <img class="lazyload loaded" src="images/laptop_2.png" alt=" ">
                                             </a>
-                                            <div class="product-action">
+                                            <div class="product-action d-md-block d-none">
                                                 <div class="group_action">
                                                     <input class="hidden" type="hidden">
                                                     <button class="hidden-xs btn btn-cart btn-left  btn btn-views left-to">
@@ -1175,8 +1354,8 @@
 
         <!-- end_only_for_you---------- -->
 
-        <div id="share_tips ">
-            <div class="container card border-0 py-3 ">
+        <div id="share_tips">
+            <div class="container card border-0 py-3">
                 <div class="title_module_main heading-bar d-flex justify-content-between align-items-center ">
                     <h2 class="heading-bar_title ">
                         <a class="link " href=" " title="RAU CỦ QUẢ ">Tin tức mới nhất</a>
@@ -1191,38 +1370,63 @@
                     <div class="slick-list draggable ">
                         <div class="slick-track ">
                             <div class="news-item slick-slide slick-current slick-active ">
-                                <div class="home-news ">
-                                    <div class="home-news_img embed-responsive ">
+                                <div class="home-news">
+                                    <div class="home-news_img embed-responsive">
                                         <img src="images/share_tips.png" alt=" ">
                                     </div>
-                                    <div class="home-news_info ">
+                                    <!-- <div class="home-news_img embed-responsive ">
+                                            <img src="images/share_tips.png" alt=" ">
+                                        </div> -->
+
+
+                                    <div class="home-news_info">
                                         <div class="news-content ">
                                             <h3 class="mb-3 ">
                                                 <a href=" " class="text-decoration-none">
-                                                    GoPro tuyên bố thưởng 5 triệu USD									</a>
+                                                            GoPro tuyên bố thưởng 5 triệu USD									</a>
                                             </h3>
                                             <p>
                                                 GoPro vừa công bố giải thưởng thường niên cho những sản phẩm đẹp nhất được ghi lại từ thiết bị của họ với...
                                             </p>
-                                            <!-- <a href=" ">Xem chi tiết</a> -->
+
                                             <div class="text-left my-3 ">
                                                 <a href="" class="btn btn-main rounded-pill px-4">Xem chi tiết
-                                                    </a>
+                                                            </a>
 
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- <div class="home-news_info ">
+                                            <div class="news-content ">
+                                                <h3 class="mb-3 ">
+                                                    <a href=" " class="text-decoration-none">
+                                                        GoPro tuyên bố thưởng 5 triệu USD									</a>
+                                                </h3>
+                                                <p>
+                                                    GoPro vừa công bố giải thưởng thường niên cho những sản phẩm đẹp nhất được ghi lại từ thiết bị của họ với...
+                                                </p>
+    
+                                                <div class="text-left my-3 ">
+                                                    <a href="" class="btn btn-main rounded-pill px-4">Xem chi tiết
+                                                        </a>
+    
+                                                </div>
+                                            </div>
+                                        </div> -->
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-        </div>
 
-        <!-- end share tips---------------- -->
+
+        </div>
+    </div>
+
+    <!-- end share tips---------------- -->
 
     </div>
 
@@ -1233,43 +1437,46 @@
         <div class="mid-footer">
             <div class="container ">
                 <div class="row ">
-                    <div class="col-xs-12 col-md-6 col-lg-3 footer-click ">
-                        <h4 class="title-menu clicked ">Về chúng tôi</h4>
-                        <a href=" ">
-                            <img src="images/logo_ega_market.png" alt=" " width="120px" height="50px">
-                        </a>
-                        <p class="pt-2">
-                            ABC chuyên cung cấp các sản phẩm chất lượng.
-                        </p>
-                        <p EGA Green chuyên cung cấp các thực phẩm tươi sống.></p>
-                        <div class="single-contact ">
-                            <i class="fa fa-map-marker-alt "></i>
-                            <div class="content pd_l_15">
-                                Địa chỉ
-                                <span>270 - 272 Cộng Hòa, Phường 13, Quận Tân Bình, TP HCM</span>
-                            </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3 col-12 footer-click ">
+                        <div class="wp_about_us_f">
+                            <!-- <h4 class="title-menu clicked ">Về chúng tôi</h4> -->
+                            <a href=" ">
+                                <img src="images/logo_ega_market.png" alt=" " width="120px" height="50px">
+                            </a>
+                            <p class="pt-2">
+                                ABC Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <p EGA Green chuyên cung cấp các thực phẩm tươi sống.></p>
+                            <div class="single-contact ">
+                                <i class="fa fa-map-marker-alt "></i>
+                                <div class="content pd_l_15 pl-1">
+                                    Địa chỉ:
+                                    <span>270 - 272 Đường Cộng Hòa, Phường 13, Quận Tân Bình,<br> TP HCM</span>
+                                </div>
 
-                        </div>
-                        <div class="single-contact ">
-                            <i class="fa fa-mobile-alt"></i>
-                            <div class="content pd_l_15">
-                                Số điện thoại: <a class="link_f" title="19006750 " href="tel:19006750 ">19006750 </a>
+                            </div>
+                            <div class="single-contact ">
+                                <i class="fa fa-mobile-alt"></i>
+                                <div class="content pd_l_15 pl-1">
+                                    Số điện thoại: <a class="link_f" title="19006750 " href="tel:19006750 ">19006789 </a>
+                                </div>
+                            </div>
+                            <div class="single-contact ">
+                                <i class="fa fa-envelope "></i>
+                                <div class="content pd_l_15 pl-1">
+                                    Email: <a title="support@sapo.vn " class="link_f " href="mailto:support@sapo.vn ">support@hitime.vn</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="single-contact ">
-                            <i class="fa fa-envelope "></i>
-                            <div class="content pd_l_15">
-                                Email: <a title="" class="link_f " href="">info@hitime.vn
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 footer-click ">
+                    <div class="col-xs-12 col-md-6 col-lg-3 col-12 footer-click wp_information_f">
+                        <!-- <div class="wp_information_f"> -->
                         <h4 class="title-menu clicked ">Tìm hiểu thêm</h4>
                         <ul class="list-menu toggle-mn ">
 
                             <li class="li_menu ">
-                                <a class="link_f " href="/ " title="Giới thiệu EGA Green ">Giới thiệu EGA Market</a>
+                                <a class="link_f " href="/ " title="Giới thiệu  ">Giới thiệu</a>
                             </li>
 
                             <li class="li_menu ">
@@ -1297,8 +1504,12 @@
                             </li>
 
                         </ul>
+                        <!-- </div> -->
+
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 footer-click ">
+                    <div class="col-xs-12 col-md-6 col-lg-3 col-12 footer-click wp_support_f">
+
+                        <!-- <div class="wp_support_f"> -->
                         <h4 class="title-menu clicked ">Hỗ trợ khách hàng</h4>
                         <ul class="list-menu toggle-mn ">
 
@@ -1331,8 +1542,10 @@
                             </li>
 
                         </ul>
+                        <!-- </div> -->
+
                     </div>
-                    <div class="col-xs-12 col-md-6 col-lg-3 footer-click ">
+                    <div class="col-xs-12 col-md-6 col-lg-3 col-12 footer-click ">
                         <div class="social-footer ">
                             <h4 class="title-menu ">
                                 Theo dõi chúng tôi
@@ -1340,22 +1553,22 @@
                             <ul class="follow_option d-flex flex-wrap align-items-center p-0 list-unstyled ">
 
                                 <li>
-                                    <a class="facebook link_f " href="# " title="Theo dõi Facebook EGA GREEN "><i class="fab fa-facebook-f "></i></a>
+                                    <a class="facebook link_f " href="# " title="Theo dõi Facebook ABC "><i class="fab fa-facebook-f "></i></a>
                                 </li>
 
 
                                 <li>
-                                    <a class="twitter link_f " href="# " title="Theo dõi Twitter EGA GREEN "><i class="fab fa-twitter "></i></a>
+                                    <a class="twitter link_f " href="# " title="Theo dõi Twitter ABC"><i class="fab fa-twitter "></i></a>
                                 </li>
 
 
                                 <li>
-                                    <a class="behance link_f " href="# " title="Theo dõi Behance EGA GREEN "><i class="fab fa-behance "></i></a>
+                                    <a class="behance link_f " href="# " title="Theo dõi Behance ABC "><i class="fab fa-behance "></i></a>
                                 </li>
 
 
                                 <li>
-                                    <a class="instgram link_f " href="# " title="Theo dõi instgram EGA GREEN "><i class="fab fa-instagram "></i></a>
+                                    <a class="instgram link_f " href="# " title="Theo dõi instgram ABC "><i class="fab fa-instagram "></i></a>
                                 </li>
 
                             </ul>
@@ -1367,9 +1580,7 @@
                                     <img class="lazyload img-fluid loaded" src="images/product_trustbadge.png" alt="Phương thức thanh toán" data-was-processed="true">
                                 </a>
                             </div>
-                            <a href="" title="Logo bộ công thương">
-                                <img class="lazyload loaded" src="images/logo_bct.png" data-src="" alt="Logo bộ công thương" data-was-processed="true">
-                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -1378,10 +1589,10 @@
         <div class="bg-footer-bottom copyright clearfix py-2">
             <div class="container">
                 <div class="row">
-                    <div id="copyright" class="col-lg-12 col-md-12 col-xs-12 fot_copyright">
+                    <div id="copyright" class="col-lg-12 col-md-12 col-xs-12 col-12 fot_copyright">
                         <span class="wsp">
                                 © Bản quyền thuộc về 
-                                <a href="" rel="nofollow" target="_blank"></a> | Cung cấp bởi <a href="" rel="" title="" target="_blank">HiTime</a>
+                                <a href="" rel="nofollow" target="_blank"></a> | Cung cấp bởi <a href="https://hitime.vn/" rel="" title="" target="_blank">HiTime</a>
                             </span>
                     </div>
                 </div>
